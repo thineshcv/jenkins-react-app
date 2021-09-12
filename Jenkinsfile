@@ -12,7 +12,10 @@ pipeline {
                 git 'git@github.com:thineshcv/jenkins.git'
             }
         }
-    
+	stage('test') {
+		steps {
+			sh 'yarn test'
+		}
     }
     
 }
