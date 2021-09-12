@@ -16,6 +16,12 @@ pipeline {
 		steps {
 			sh 'yarn test'
 		}
+	}
+	stage('Docker Image') {
+		steps {
+			sh 'docker image build -t react-app:0.1 ."
+		}
+   	 }
+
     }
-    
 }
