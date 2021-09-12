@@ -19,7 +19,7 @@ pipeline {
 	}
 	stage('Docker Image') {
 		steps {
-			sh 'docker image build -t react-app:0.1 ."
+			sh 'docker image build -t react-app:0.1 .'
 		}
    	 }
 
